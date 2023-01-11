@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+}
+
+
+
+header {
+    background-color: brown;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 60px);
+    width: 65%;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 90%;
+  border: 3px solid goldenrod;
+  grid-row: 1/4;
+}
+header h2 {
+    text-align: center;
+    grid-row: 2/3;
+    color: rgb(211, 166, 16)
+}
+
+main {
+    display: grid;
+    margin: auto;
+    max-width: 65%;
+    grid-template-columns: 150 auto;
+
+}
+
+li {
+    font-family: "Spline Sans", sans-serif;
+    font-size: large;
+}
+
+footer {
+    background-color: brown;
+    display: grid;
+    margin: auto;
+    max-width: 65%;
+    grid-template-columns: 150 auto;
+    width: 65%;
+}
+footer h4, h3 {
+    text-align: center;
+}

@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Portal</title>
+    <script>
+        function lastMod() {
+            var x = document.lastModified;
+            document.getElementById("sudo").innerHTML = x;
+        }
+    </script>
     
 </head>
-<body>
+<body onload="lastMod()">
     <header>
         <img src="images\20220127_161154.jpg" alt="Me standing under an exotic bird in a tree" width="400" height="500">
         <h2>Jared Steven. T. Scott</h2>
     </header>
     
     <main>
-        <h2>WDD 230: Assignment Portal</h2>
+        <h2 id="mainTitle">WDD 230: Assignment Portal</h2>
         <ul>
-            <li>Lesson 02: </li>
+            <li>Lesson 2: <a href="lesson2.html">Title</a></li>
+            <li>Lesson 3: <a href="lesson3.html">Title</a></li>
+            <li>Lesson 4: <a href="lesson4.html">Title</a></li>
+            <li>Lesson 5: <a href="lesson5.html">Title</a></li>
+            <li>Lesson 6: <a href="lesson6.html">Title</a></li>
+            <li>Lesson 7: <a href="lesson7.html">Title</a></li>
+            <li>Lesson 8: <a href="lesson8.html">Title</a></li>
+            <li>Lesson 9: <a href="lesson9.html">Title</a></li>
+            <li>Lesson 10: <a href="lesson10.html">Title</a></li>
+            <li>Lesson 11: <a href="lesson11.html">Title</a></li>
+            
+
         </ul>
     </main>
 
     <footer>
         <h3>2023 | Jared Steven. T, Scott. | Arkansas </h3>
-        <h2>Last updated</h2>
-        <script>
-            /* Function to use lastModified property */
-            function geeks() {
-                var x = document.lastModified;
-                document.getElementById("sudo").innerHTML = x;
-            }
-        </script>
-        <p id="sudo"></p>
+        <h4>Last updated: <p id="sudo"></p></h2>
     </footer>
     
 </body>
