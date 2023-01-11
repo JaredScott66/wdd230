@@ -39,7 +39,7 @@ main {
     max-width: 65%;
     height: 400px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px auto;
+    grid-template-rows: 70px, auto;
 
 }
 
@@ -57,7 +57,7 @@ footer {
     display: grid;
     margin: auto;
     max-width: 65%;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 150px, auto;
     width: 65%;
 }
 footer h4, h3 {
