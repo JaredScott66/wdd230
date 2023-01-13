@@ -22,7 +22,7 @@ header {
 header img {
   display: block;
   margin: auto;
-  width: 40%;
+  width: 40% auto;
   height: 90%;
   border: 3px solid goldenrod;
   grid-row: 1/4;
