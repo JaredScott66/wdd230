@@ -1,4 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
+
+
+/* Home */
+body {
+    background-color: #fdbc86;
+}
+
+header {
+    background-color: #BC664B;
+}
+
+nav {
+    background-color: #70101e;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+nav a:hover {
+    background-color: #7b1010;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-top: 5px;
+    font-size: 1.3em;
+}
+
+
 /* colors */
-#color1 {
-    color: #FC9E4F;
+#header-prime {
+    background-color: #fdbc86;
+}
+
+#header-second {
+    background-color: #BC664B;
+}
+
+.nav-prime {
+    background-color: #7b1010;
+}
+
+.nav-second {
+    background-color: #70101e;
+}
+.footer-prime {
+    background-color: #7b1010;
+}
+
+/* fonts */
+.font-header {
+    font-family: "Spline Sans", serif;
+}
+
+.font-paragraph {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* Structure */
+main {
+    margin: 0;
+}
+
+#typography {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+#header-set {
+    border: 2px solid black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#header-set h1 {
+    margin: 0;
+}
+
+#nav-set {
+    border: 2px solid black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 3px;
+}
+
+#nav-set h1 {
+    margin: 0;
+}
+
+#footer-set {
+    border: 2px solid black;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 3px;
+}
+
+#footer-set h1 {
+    margin: 0;
+}
+
+#fonts {
+    border: 2px solid black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 3px;
+}
+
+#fonts h1, #fonts h3 {
+    margin: 5px;
 }
