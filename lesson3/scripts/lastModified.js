@@ -3,4 +3,4 @@ function lastMod() {
     document.getElementById("sudo").innerHTML = x;
  }
 
- lastMod();
+lastMod()
