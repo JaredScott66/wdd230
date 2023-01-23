@@ -9,6 +9,24 @@ body {
 
 header {
     background-color: #BC664B;
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    
+}
+
+header h1 {
+    text-align: center;
+}
+
+#logo-link {
+    grid-column: 1/2;
+    padding: 10px;
+    size: 100em;
+}
+
+header img {
+    border: 3px solid black;
+    height: 100px;
 }
 
 nav {
@@ -16,38 +34,58 @@ nav {
     display: flex;
     justify-content: space-around;
     height: 40px;
+    grid-column: 1/3;
 }
 
 nav a:hover {
     background-color: #7b1010;
+    color: gold;
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    padding-top: 5px;
+    padding: 5px;
     font-size: 1.3em;
+}
+
+#persona1, #persona2 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border: 4px solid white;
+    padding: 5px;
+    margin: +10px;
+}
+
+#persona1 img, #persona2 img {
+    height: 150px;
+    border: 2px solid black;
 }
 
 
 /* colors */
 #header-prime {
     background-color: #fdbc86;
+    border: 1px solid black;
 }
 
 #header-second {
     background-color: #BC664B;
+    border: 1px solid black;
 }
 
 .nav-prime {
     background-color: #7b1010;
+    border: 1px solid black;
 }
 
 .nav-second {
     background-color: #70101e;
+    border: 1px solid black;
 }
 .footer-prime {
     background-color: #7b1010;
+    border: 1px solid black;
 }
 
 /* fonts */
@@ -59,6 +97,14 @@ nav a {
     font-family: "Nunito Sans", sans-serif;
 }
 
+p {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Spline Sans", serif;
+}
+
 /* Structure */
 main {
     margin: 0;
@@ -67,14 +113,16 @@ main {
 #typography {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(3, 110px);
     gap: 10px;
+    padding: 5px;
 }
 
 #header-set {
     border: 2px solid black;
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 3px;
 }
 
 #header-set h1 {
@@ -112,4 +160,12 @@ main {
 
 #fonts h1, #fonts h3 {
     margin: 5px;
+}
+
+footer {
+    background-color: #7b1010;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
 }

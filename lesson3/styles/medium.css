@@ -1,0 +1,14 @@
+@media  only screen and (max-width: 32.5em) {
+    header {
+        display: flex;
+        flex-flow: column;
+    }
+    nav {
+        flex-flow: column;
+        height: fit-content
+    }  
+    #typography {
+        display: flex;
+        flex-flow: column;
+    }  
+}
