@@ -46,17 +46,12 @@ body {
 
 header {
     background-color: #BC664B;
-    display: grid;
-    
-    
+    display: flex;
 }
 
 header h1 {
     text-align: center;
 }
-
-
-
 
 nav a:hover {
     background-color: #7b1010;
