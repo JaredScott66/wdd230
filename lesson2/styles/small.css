@@ -13,10 +13,10 @@ main {
     grid-template-columns: 1fr;
 }
 
-#WhiteSpace {
+.info {
     grid-column: 1/2;
 }
 
-#WhiteSpace img {
+.info img {
     width: 50%;
 }
