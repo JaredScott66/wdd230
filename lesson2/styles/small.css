@@ -49,7 +49,7 @@ main {
 }
 
 p {
-    font-weight: "Spline Sans", sans-serif;
+    font-family: "Spline Sans", sans-serif;
     font-size: 1.15em;
     grid-row: 4/5;
     padding: 10px;
