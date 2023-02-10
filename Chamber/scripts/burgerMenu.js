@@ -1,6 +1,8 @@
-function burgerMenu() {
-    document.getElementsByClassName("primaryNav").classList.toggle("open");
+function toggleMenu() {
+    console.log("help");
+    document.getElementById("menu").classList.toggle("open");
+    document.getElementById("hambergerBtn").classList.toggle("open");
 }
 
 const x = document.getElementById("hambergerBtn");
-x.onclick = burgerMenu;
+x.onclick = toggleMenu;

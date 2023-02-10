@@ -9,37 +9,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarksville Chamber</title>
-    <script scr="scripts\burgerMenu.js"></script>
+    
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo-link">
-            <img src="images\webLogo.png" alt="Wagon Wheel on white back-drop">
-        </a>
-        <h1>Clarksville</h1>
-        <h3>Chamber of Commerce</h3>
-
-        <section id="media-sect">
-            <a href="https://www.facebook.com/" class="media">
-                <img src="images/  " alt="facebook icon">
+        <section id="main-title">    
+            <a href="index.html">
+                <img id="logo-link" src="images\webLogo.png" alt="Wagon Wheel on white back-drop">
             </a>
-            <a href="linked in?" class="media">
-                <img src="images/  " alt="???">
-            </a>
+            <h1>Clarksville <br><span id="title-chamber">Chamber of Commerce</span></h1>
         </section>
-
+        <div id="media-div">
+            <a href="https://www.facebook.com/" class="media">
+                <img src="images\facebook-logo.png" alt="facebook icon">
+            </a>
+            <a href="https://www.linkedin.com/" class="media">
+                <img src="images\linkedin-logo.png" alt="???">
+            </a>
+        </div>
+        <p id="date"></p>
         <nav>
-<button id="hambergerBtn">&#9776;</button>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
+<button id="hambergerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="menu">
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="target-audience.html">Audience</a></li>
                 <li><a href="design.html">Design</a></li>
             </ul>
         </nav>
-        <p id="date"></p>
+        
         <script src="scripts\currentDate.js"></script>
     </header>
-
     <main>
         <section class="webElement" id="hero">
             <h2>Hero with site name and call to action</h2>
@@ -65,5 +64,17 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div>    
+            <a href="index.html"> <img src="images\webLogo.png"> <h2>Clarksville Chamber</h2></a>
+            <p>101 N Johnson St, Clarksville, AR 72830<br>(479) 754-2340</p>
+        </div>
+        <footer>
+            <h3> &copy; 2023 | Jared Steven. T, Scott. | Arkansas </h3>
+            <h4>Last updated: <p id="sudo"></p></h2>
+        </footer>
+    </footer>
+<script src="scripts/burgerMenu.js"></script>
+<script src="scripts/lastModified.js"></script>
 </body>
 </html>

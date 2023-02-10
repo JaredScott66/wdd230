@@ -2,3 +2,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
 
 
+body {
+    background-color: #fdbc86;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+header {
+    background-color: #70101e;
+    display: grid;
+    /* max-height: 250px; */
+    /* grid-template-rows: 1fr .5fr 50px;*/
+    grid-template-columns: 3fr 100px; 
+}
+
+#title-chamber {
+    font-size: .5em;
+}
+
+header h1 h3 {
+    float: right;
+    padding: 10px;
+    margin: 0;
+}
+
+#main-title {
+    display: flex;
+    margin: auto;
+}
+#media-div {
+    padding: 0;
+    margin: auto;
+}
+
+
+#logo-link {
+    width: 50px;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+#media-div a img {
+    width: 30px;
+}
+
+nav {
+    background-color: rgba(223, 13, 13, 0.233);
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+nav button:hover {
+    color: rgba(0,0,0,0.2);
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+    grid-row: 2/3;
+}
+
+#hambergerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hambergerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hambergerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hambergerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+#date {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin: auto;
+    padding-inline: 150px;
+    padding-block: 8px;
+    background-color: rgba(223, 13, 13, 0.2);
+    text-align: center ;
+    font-family: "Spline Sans", sans-serif;
+    font-size: 1.2em;
+    color: beige;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
