@@ -199,3 +199,20 @@ footer a:hover {
 #join {
     display: none;
 }
+
+a {
+    text-decoration: none;
+}
+
+a h2 {
+    color: coral;
+}
+
+a h2:hover {
+    color: slategray;
+}
+
+footer div img {
+    width: 500px;
+    border: solid black 4px;
+}
