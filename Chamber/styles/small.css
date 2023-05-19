@@ -16,8 +16,23 @@ header {
     grid-template-columns: 3fr 100px; 
 }
 
+/*header {
+    grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+*/
 #title-chamber {
     font-size: .5em;
+}
+
+#timedBanner {
+    position: absolute;
+    margin: 5px;
+    border: solid black 3px;
+    padding: 5px;
+    background-color: rgb(250, 235, 215, .7);
+    color: rgb(7, 7, 7);
+    font-family: "Spline Sans", sans-serif;
 }
 
 header h1 h3 {
@@ -27,16 +42,21 @@ header h1 h3 {
 }
 
 #main-title {
+    /*grid-row: 2/3;*/
     display: flex;
     margin: auto;
     color: rgba(243, 239, 229, 0.842);
 }
 #media-div {
+    /*grid-row: 3/4;*/
     padding: 0;
     margin: auto;
 }
 
-
+/*#date {
+    grid-row: 3/4;
+}
+*/
 #logo-link {
     width: 50px;
     margin: 10px;
@@ -62,6 +82,11 @@ nav {
     background-color: rgba(223, 13, 13, 0.233);
     grid-column: 1/4;
     grid-row: 3/4;
+}
+
+nav {
+    grid-row: 4/5;
+    padding: 0 auto;
 }
 
 nav button {
@@ -216,3 +241,4 @@ footer div img {
     width: 500px;
     border: solid black 4px;
 }
+
