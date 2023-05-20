@@ -20,6 +20,19 @@ main {
 	width: fit-content;
 }
 
+#list button {
+	color: red;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	font-size: larger;
+	font-family: sans-serif;
+}
+
+#list button:hover {
+	background-color: rgb(0, 174, 255);
+	border: solid black 1px;
+}
+
 li {
 	display: flex;
 	align-items: center;
