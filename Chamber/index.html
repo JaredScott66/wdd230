@@ -48,6 +48,7 @@
     </header>
     <main>
         <section class="webElement" id="hero">
+            <!--<img src="images/wdd230-org.jpg" alt="talking group">-->
             <h2>Hero with site name and call to action</h2>
         </section>
 
@@ -56,6 +57,11 @@
         </section>
         <section class="webElement" id="weather">
             <h2>Weather</h2>
+            <section class="windChill">
+                <p id="temperature"></p>
+                <p id="windspeed"></p>
+                <p id="windchill"></p>
+            </section>
         </section>
         <section class="webElement" id="join">
             <h2>Join</h2>
@@ -79,7 +85,7 @@
     <footer>
         <div>    
             <a href="index.html"> <img id="footer-logo" src="images\webLogo.png"><h2>Clarksville Chamber</h2></a>
-            <img src="images\chamberMap.png" >
+            <a class="directions" href="https://www.google.com/maps/place/Clarksville+-+Johnson+County+Chamber+of+Commerce/@35.4717723,-93.4695476,19z/data=!4m21!1m14!4m13!1m4!2m2!1d-93.3489681!2d35.3771559!4e1!1m6!1m2!1s0x87cc6ba83e622545:0xfebb7ff8463ba6b4!2sclarkville+chamber!2m2!1d-93.4688185!2d35.4717578!5i1!3m5!1s0x87cc6ba83e622545:0xfebb7ff8463ba6b4!8m2!3d35.4717712!4d-93.4689025!16s%2Fg%2F1tmxrk6q?entry=ttu">Directions</a>
             <p>101 N Johnson St, Clarksville, AR 72830<br>(479) 754-2340</p>
         </div>
         <div id="dev-detail">
@@ -89,6 +95,7 @@
     </footer>
 <script src="scripts/burgerMenu.js"></script>
 <script src="scripts/lastModified.js"></script>
+<script src="scripts/windchill.js"></script>
 
 </body>
 </html>

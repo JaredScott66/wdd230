@@ -242,3 +242,10 @@ footer div img {
     border: solid black 4px;
 }
 
+.windChill {
+    background-color: blue;
+    color: #f1eded;
+    padding: 1px;
+    text-align: center;
+    font-size: larger
+}
