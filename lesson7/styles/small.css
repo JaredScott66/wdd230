@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
