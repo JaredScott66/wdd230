@@ -249,3 +249,95 @@ footer div img {
     text-align: center;
     font-size: larger
 }
+
+/* Discover Page*/
+#discover {
+    padding: 5px;
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+
+#statistics {
+    background-color: rgba(138, 138, 138, 0.5);
+}
+
+#facts {
+    background-color: rgba(138, 138, 138, 0.5);
+}
+
+.photos div {
+    border: solid black 3px;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.5);
+    /*width: 600px;*/
+}
+
+.photos p {
+    padding: 5px;
+}
+
+.photos img {
+    width: 350px;
+    height: 250px;
+    border: solid black 2px;
+    margin: 5px;
+}
+
+.photos {
+    grid-row: 1/4;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+#chamber {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+#chamber img {
+    float: left;
+}
+
+#oldClarksville {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#oldClarksville img {
+    float: right;
+}
+
+#carshow {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#countyOverlook {
+    grid-row: 1/2;
+    grid-column: 2/4;
+}
+
+#countyOverlook img {
+    float: left;  
+}
+
+#carshow {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#statistics {
+    border: solid black 3px;
+    padding: 5px;
+}
+
+#facts {
+    border: solid black 3px;
+}
+

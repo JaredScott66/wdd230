@@ -55,4 +55,8 @@
         grid-row: 3/4;
     }
 
+    .photos img {
+        width: 50%;
+    }
+
 }
