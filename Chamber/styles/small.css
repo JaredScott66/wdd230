@@ -180,6 +180,7 @@ main {
 
 #hero img {
     height: 500px;
+    border: solid black 3px;
 }
 
 #hero h2 {
