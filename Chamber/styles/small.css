@@ -178,6 +178,14 @@ main {
     border: 2px solid black;
 }
 
+#hero img {
+    height: 500px;
+}
+
+#hero h2 {
+    text-align: center;
+}
+
 #spot-sect {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -245,6 +253,7 @@ footer div img {
 .windChill {
     background-color: blue;
     color: #f1eded;
+    border: solid #ffffff 3px;
     padding: 1px;
     text-align: center;
     font-size: larger
