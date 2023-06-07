@@ -1,0 +1,41 @@
+
+
+thead {
+   background-color: rgba(0, 0, 0, 0.116);
+   padding: 2px;
+   border: solid black 1px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgba(128, 128, 128, 0.596);
+}
+
+thead th {
+    background-color: burlywood;
+}
+
+
+table {
+	margin: 10px auto;
+	border: thin solid black;
+	box-shadow: 0 0 10px hsl(0, 0%, 50%);
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid rgba(84, 84, 84, 0.3);
+}
+
+
+
+td {
+	text-align: center;
+}
