@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="styles\normalize.css">
+    <link rel="stylesheet" href="styles\small.css">
+    <link rel="stylesheet" href="styles\medium.css">
+    <link rel="stylesheet" href="styles\large.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarksville Chamber</title>
+    
+</head>
+<body>
+    <header>
+        <section id="main-title">    
+            <a href="index.html">
+                <img id="logo-link" src="images\webLogo.png" alt="Wagon Wheel on white back-drop">
+            </a>
+            <h1>Clarksville <br><span id="title-chamber">Chamber of Commerce</span></h1>
+        </section>
+        <div id="media-div">
+            <a href="https://www.facebook.com/" class="media">
+                <img src="images\facebook-logo.png" alt="facebook icon">
+            </a>
+            <a href="https://www.linkedin.com/" class="media">
+                <img src="images\linkedin-logo.png" alt="???">
+            </a>
+        </div>    
+        <p id="date"></p>
+
+        <nav>
+<button id="hambergerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="target-audience.html">Audience</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        
+        <script src="scripts\currentDate.js"></script>
+    </header>
+<body>
+    <main id="join">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Application form</legend>
+                <label> First Name* <input type="text" name="fname" required></label>
+                <label> Last Name* <input type="text" name="lname" required></label>
+                <label>Position Title <input type="text" name="title"></label>
+                <label>Email* <input type="email" name="email" placeholder="exampel@gmail.com"></label>
+                <label>Cell Phone* <input type="tel" name="phone" placeholder="(xxx) xxx-xxxx" required></input></label>
+                <label>Business Name*<input type="text" name="bus-name" required></label>
+                
+            </fieldset>
+             
+        </form>
+    </main>
+    <footer>
+        <h3> &copy; 2023 | Jared Steven. T, Scott. | Arkansas </h3>
+        <h4>Last updated: <p id="sudo"></p></h2>
+        <h2 id="visits"></h2>
+    </footer> 
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/img-load.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/valid-txt.js"></script>
+</body>
+</html>
