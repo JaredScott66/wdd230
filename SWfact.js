@@ -6,7 +6,7 @@ var outputElement = document.querySelector("#data");
 async function factGrap(url) {
     const response = await fetch(url);
     const facts = await response.json();
-    outputElement.innerHTML = facts;
+    outputElement.innerHTML = facts.name;
 
     console.log = facts;
 }
