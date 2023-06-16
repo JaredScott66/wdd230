@@ -1,5 +1,5 @@
 const url = "https://swapi.dev/api/people/1/";
-var outputElement = document.querySelector("#fact");
+var outputElement = document.querySelector("#data");
 
 function addSite(data) {
     outputElement.innerHTML = `${data}`;
