@@ -1,4 +1,4 @@
-const url = "https://swapi.dev/api/vehicles/";
+const url = "https://swapi.dev/api/people/1/";
 var outputElement = document.querySelector("#fact");
 
 function addSite(data) {
