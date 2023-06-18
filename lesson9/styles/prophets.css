@@ -1,0 +1,39 @@
+header {
+    text-align: center;
+    
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: rgb(19, 109, 182);
+    border: solid 3px gold;
+}
+
+
+section img {
+    margin-left: 21.5%;
+    margin-bottom: 20px;
+}
+
+.info {
+    color: white;
+    font-size: large;
+    text-align: center;
+    
+
+}
+
+html {
+    background-color: rgb(143, 114, 170);
+}
