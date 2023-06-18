@@ -45,17 +45,24 @@
 <body>
     <main id="join">
         <form method="get" action="thankyou.html">
-            <fieldset>
+            <fieldset id="form">
                 <legend>Application form</legend>
-                <label> First Name* <input type="text" name="fname" required></label>
-                <label> Last Name* <input type="text" name="lname" required></label>
-                <label>Position Title <input type="text" name="title"></label>
-                <label>Email* <input type="email" name="email" placeholder="exampel@gmail.com"></label>
-                <label>Cell Phone* <input type="tel" name="phone" placeholder="(xxx) xxx-xxxx" required></input></label>
-                <label>Business Name*<input type="text" name="bus-name" required></label>
-                
+                <label> First Name* <br><input type="text" name="fname" required></label>
+                <label> Last Name* <br><input type="text" name="lname" required></label>
+                <label>Position Title <br><input type="text" name="title"></label>
+                <label>Email* <br><input type="email" name="email" placeholder="exampel@gmail.com"></label>
+                <label>Cell Phone* <br></nr><input type="tel" name="phone" placeholder="(xxx) xxx-xxxx" required></input></label>
+                <label>Business Name* <br><input type="text" name="bus-name" required></label>
+                <div id="memberlvl">
+                    <legend>Membership level</legend>
+                        <label><input type="radio" name="memberlvl" value="NP Membership"> NP Membership</label>
+                        <label><input type="radio" name="memberlvl" value=""> Bronze Membership</label>
+                        <label><input type="radio" name="memberlvl" value="Silver Membership"> Silver Membership</label>    
+                    <label><input type="radio" name="memberlvl" value="Gold Membership"> Gold Membership</label>
+                </div>
+                <!-- <label>Business information<input type="textArea" </label> -->
             </fieldset>
-             
+            <input type="submit" value="Apply"> 
         </form>
     </main>
     <footer>

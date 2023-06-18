@@ -364,3 +364,22 @@ footer div img {
     grid-row: 2/3;
 }
 
+#form label {
+    display: block;
+    margin: 5px;
+}
+#form label input:required {
+    border-left: solid red 6px;
+}
+
+#form label input:required:valid {
+    border-left: solid green 6px;
+}
+
+fieldset {
+    background-color: bisque;
+}
+
+legend {
+    font-size: large;
+}
