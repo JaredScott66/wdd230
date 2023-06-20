@@ -1,0 +1,68 @@
+{   
+    "businesses": [
+        {
+            "name": "Clarksville Country Club",
+            "address": "401 W Country Club Rd Clarksville, AR 72830",
+            "phone": "(479) 745-3026",
+            "url": "https://clarksville-countryclub.com",
+            "webPic": "Chamber/images/directoryPhotos/ccc-logo-for-website-1.png"
+        },
+        {
+            "name": "24 Hour Family Fitness",
+            "address": "1130 S Crawford Clarksville, AR 72830",
+            "phone": "(479) 705-3488",
+            "url": "https://www.24hourfamfit.com",
+            "webPic": "Chamber/images/directoryPhotos/24hrFit.png"
+        },
+        {
+            "name": "Cleopatra's Salon",
+            "address": "109 South Craven's Street Clarksville, AR 72830",
+            "phone": "(479) 705-1500",
+            "url": "https://www.facebook.com/cleopatrassalon2002/?ref=page_internal",
+            "webPic": "Chamber/images/directoryPhotos/cleopatPic.png"
+        },
+        {
+            "name": "Atwood's",
+            "address": "1121 S Rogers Clarksville, AR 72830",
+            "phone": "(479) 705-2880",
+            "url": "https://www.atwoods.com",
+            "webPic": "Chamber/images/directoryPhotos/atwoodsPic.png"
+        },
+        {
+            "name": "Meadors Lumber Company",
+            "address": "1003 Interstate Dr Clarksville, AR 72830",
+            "phone": "(479) 705-0675",
+            "url": "https://meadorslumber.com",
+            "webPic": "Chamber/images/directoryPhotos/6216bfef470ca_TV_Logo.png"
+        },
+        {
+            "name": "King's Locksmith",
+            "address": "2415 West Main Street Clarksville, AR 72830",
+            "phone": "(479) 754-4096",
+            "url": "https://www.kingslocks.com",
+            "webPic": "Chamber/images/directoryPhotos/kingsLockPic.png"
+        },
+        {
+            "name": "Blossomberry Nursery",
+            "address": "2622 HWY 21 Clarksville, AR 72830",
+            "phone": "479-754-6489",
+            "url": "https://www.facebook.com/blossomberrynursery",
+            "webPic": "Chamber/images/directoryPhotos/blossumPic.png"
+        },
+        {
+            "name": "Peach Pickin' Paradise",
+            "address": "1901 McGuire Road Lamar, AR 72846",
+            "phone": "(479) 754-2006",
+            "url": "https://www.facebook.com/peachpickinparadise/",
+            "webPic": "Chamber/images/directoryPhotos/peachPic.png"
+        },
+        {
+            "name": "Oark General Store & Cafe",
+            "address": "10360 Co Rd 5440 Oark, AR 72852",
+            "phone": "(479) 292-3351",
+            "url": "http://www.oarkgeneralstore.com/",
+            "webPic": "Chamber/images/directoryPhotos/oarkPic.png"
+        }
+        
+    ]
+}
