@@ -17,7 +17,7 @@ function setBanner() {
     if (day == 4) {
         x.innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
     } else {
-        x.innerHTML = "Help"
+        x.innerHTML = null
     }
 }
 

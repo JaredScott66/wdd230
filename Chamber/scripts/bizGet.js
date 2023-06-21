@@ -19,17 +19,18 @@ const displayBusinesses = (businesses) => {
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let url = document.createElement("a");
-
-        url.textContent = "Link to Website";
-        name.textContent = business.name;
+        let level = document.createElement("p");
 
         img.setAttribute("src", business.webPic);
         img.setAttribute("alt", `${business.name} Logo`);
         img.setAttribute("loading", "lazy");
-        img.setAttribute("width", "340");
-        img.setAttribute("height", "440");
+        img.setAttribute("width", "370");
+        img.setAttribute("height", "340");
 
+        card.setAttribute("class", "sectInfo")
         ul.setAttribute("class", "bizInfo");
+
+        name.textContent = business.name;
 
         address.innerText = `${business.address}`;
         address.setAttribute("class", "bizInfo");
@@ -37,17 +38,23 @@ const displayBusinesses = (businesses) => {
         phone.innerText = `Phone ${business.phone}`;
         phone.setAttribute("class", "bizInfo");
 
+        url.innerText = `Click to Site`;
         url.setAttribute("href", business.url);
+
+        level.innerText = `Member Level: ${business.memberLvl}`;
+        level.setAttribute("class", "bizInfo");
 
 
         card.appendChild(img);
         card.appendChild(name);
-        card.appendChild(ul);
-        ul.appendChild(li)
+        
         li.appendChild(address);
         li.appendChild(phone);
         li.appendChild(url);
+        li.appendChild(level);
+        ul.append(li)
 
+        card.appendChild(ul);
         cards.append(card);
     });
 }
