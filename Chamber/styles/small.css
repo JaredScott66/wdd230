@@ -178,8 +178,13 @@ main {
     border: 2px solid black;
 }
 
+#hero {
+    display: grid;
+}
+
 #hero img {
-    height: 500px;
+    height: 25dvh;
+    justify-self: center;
     border: solid black 3px;
 }
 
@@ -295,13 +300,13 @@ footer div img {
 }
 
 .photos img {
-    width: 350px;
-    height: 250px;
+    width: 50%;
+    height: 50%;
     border: solid black 2px;
     margin: 5px;
 }
 
-.photos {
+.discPhotos {
     grid-row: 1/4;
     grid-column: 1/5;
     display: grid;
@@ -378,10 +383,15 @@ footer div img {
 
 fieldset {
     background-color: bisque;
+    width: auto;
 }
 
 legend {
     font-size: large;
+}
+
+#join {
+    display: block;
 }
 
 /* Directory Page*/
