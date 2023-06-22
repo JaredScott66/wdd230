@@ -35,6 +35,10 @@ header {
     font-family: "Spline Sans", sans-serif;
 }
 
+#dateNone {
+    display: none;
+}
+
 header h1 h3 {
     float: right;
     padding: 10px;
