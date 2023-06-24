@@ -35,7 +35,7 @@ header {
     font-family: "Spline Sans", sans-serif;
 }
 
-#dateNone {
+.dateNone {
     display: none;
 }
 
@@ -170,7 +170,7 @@ nav ul.open {
 
 main {
     display: grid;
-    grid-template-rows: repeat(4, 1fr)
+    grid-template-rows: repeat(4, 1fr);
 
 }
 
