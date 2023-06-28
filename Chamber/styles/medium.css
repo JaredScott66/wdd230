@@ -62,13 +62,11 @@
     #event {
         grid-column: 1/3;
     }
-
-    .discPhotos img {
-        width: 350px;
-        height: 250px;
-        border: solid black 2px;
-        margin: 5px;
-    }
     
+    .discPhotos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
     
 }

@@ -192,7 +192,7 @@ main {
     border: solid black 3px;
 }
 
-#hero h2 {
+#hero h1 {
     text-align: center;
 }
 
@@ -293,94 +293,108 @@ footer div img {
 
 /* Discover Page*/
 #discover {
-    padding: 5px;
+    padding: 10px;
     max-width: 1600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-}
-
-#statistics {
-    background-color: rgba(138, 138, 138, 0.5);
-}
-
-#facts {
-    background-color: rgba(138, 138, 138, 0.5);
-}
-
-.photos div {
-    border: solid black 3px;
-    padding: 5px;
-    background-color: rgba(128, 128, 128, 0.5);
-    /*width: 600px;*/
-}
-
-.photos p {
-    padding: 5px;
-}
-
-.photos img {
-    width: 50%;
-    height: 50%;
-    border: solid black 2px;
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ; */
 }
 
 .discPhotos {
-    grid-row: 1/4;
-    grid-column: 1/5;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 6);
+    text-align: center;
+} 
 
+
+
+.discPhotos div {
+    background-color: #fdd4b9;
+    padding: 10px;
+    border: 2.5px solid black;
+    font-family: "Nunito Sans", serif;
+    font-size: large;
 }
 
-#chamber {
-    grid-column: 2/4;
-    grid-row: 3/4;
-}
 
-#chamber img {
+.discPhotos img {
+    width: 350px;
+    height: 250px;
+    border: solid black 2px;
+    margin: 5px;
     float: left;
 }
 
-#oldClarksville {
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
-
-#oldClarksville img {
-    float: right;
-}
-
-#carshow {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-#countyOverlook {
-    grid-row: 1/2;
-    grid-column: 2/4;
-}
-
-#countyOverlook img {
-    float: left;  
-}
-
-#carshow {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
 
 #statistics {
-    border: solid black 3px;
-    padding: 5px;
+    background-color: rgba(138, 138, 138, 0.5);
+    width: 30dvw;
+    text-align: center;
+    grid-column: 2/3;
 }
 
 #facts {
-    border: solid black 3px;
+    background-color: rgba(138, 138, 138, 0.5);
+    width: 30dvw;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 6/7;
 }
+
+#listButton {
+    margin: 10px;
+}
+
+.listDiscPhotos {
+    padding: 10px;
+    font-family: "Nunito Sans", serif;
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+#discover.listView {
+    display: none;
+}
+
+.listView {
+    height: 50px;
+    border: 2.5px solid black;
+    background-color: #fdd4b9;
+}
+
+.listView:hover {
+    background-color: #ad927f;
+}
+
+.listView h2 {
+    margin-top: 10px;
+}
+
+.listView img {
+    display: none;
+}
+
+.listView p {
+    display: none;
+}
+
+#discData {
+
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#discData div {
+    border: 3px solid black;
+}
+
+/* Join page */
 
 #submission {
     margin: 0 auto;

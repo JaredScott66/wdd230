@@ -32,7 +32,7 @@ function displayResults(weatherData) {
     const chill = (0.0817*(3.71*(Math.pow(wind, 0.5))+
     5.81-0.25*wind)*(temp1-91.4)+91.4);
     
-    if (temp >= 50, wind < 5) {
+    if (temp <= 30, wind > 3) {
         windChill.innerHTML = `Wind Chill: N/A`;
     } else {
         windChill.innerHTML = `Wind Chill: <strong>${chill.toFixed(0)}</strong>&deg;F`;

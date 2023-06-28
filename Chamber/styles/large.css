@@ -65,11 +65,12 @@
         width: 50%;
     }
 
-    .discPhotos img {
-        /* max-width: 50%;
-        max-height: 50%px; */
-        border: solid black 2px;
-        margin: 5px;
+    .discPhotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1fr, 6);
+        text-align: center;
     }
 
+    
 }
