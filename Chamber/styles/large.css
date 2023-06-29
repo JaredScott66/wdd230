@@ -72,5 +72,29 @@
         text-align: center;
     }
 
-    
+     #news {
+        background-color: #6bd6f7;
+        display: grid;
+        grid-template-rows: 40px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #news p {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-family: "Spline Sans", sans-serif;
+        font-weight: bold;
+        line-height: 1.5em;
+        padding: 5px;
+    }
+
+    #news img {
+        grid-column: 2/3;
+        float: right;
+        grid-row: 2/3;
+        box-shadow: 8px 4px 4px black; 
+        border: solid 2.5px black;
+        justify-self: center;
+     
+    }
 }
