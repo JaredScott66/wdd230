@@ -24,8 +24,8 @@ const displayBusinesses = (businesses) => {
         img.setAttribute("src", business.webPic);
         img.setAttribute("alt", `${business.name} Logo`);
         img.setAttribute("loading", "lazy");
-        img.setAttribute("width", "370");
-        img.setAttribute("height", "340");
+        img.setAttribute("width", "260");
+        img.setAttribute("height", "240");
 
         card.setAttribute("class", "sectInfo")
         ul.setAttribute("class", "bizInfo");

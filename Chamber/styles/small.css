@@ -468,7 +468,8 @@ legend {
 main.directory {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 1fr;  
+    grid-template-rows: 60px 1fr;
+    margin: 10px;  
 }
 
 div.cards {
@@ -482,12 +483,53 @@ div.cards {
     
 }
 
+
 .sectInfo {
+    display: grid;
     border: solid red 3px;
     background-color: #f7aa6b;
+    font-family: "Nunito Sans", serif;
+
+}
+
+.sectInfo p {
+    font-weight: bolder;
+}
+
+.sectInfo a {
+    color:#f11515;
+    font-weight: bolder;
+}
+
+.sectInfo a:hover {
+    color: blue;
+}
+
+.sectInfo h2 {
+    text-align: center;
+}
+
+.sectInfo img {
+    background-color: white;
+    justify-self: center;
+    margin: 8px;
+    border: 2.5px solid black;
 }
 
 #busDirect {
     grid-column: 1/5;
     text-align: center;
+}
+
+.sectInfoGrid ul {
+    display: block;
+}
+
+ .sectInfoList img p ul {
+    display: none;
+} 
+
+div.cardsList {
+    display: grid;
+    grid-template-columns: 1fr;
 }
