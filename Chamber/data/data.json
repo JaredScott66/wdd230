@@ -6,7 +6,7 @@
             "phone": "(479) 745-3026",
             "url": "https://clarksville-countryclub.com",
             "webPic": "images/directoryPhotos/ccc-logo-for-website-1.png",
-            "memberLvl": "2"
+            "memberLvl": "Bronze"
         },
         {
             "name": "24 Hour Family Fitness",
@@ -14,7 +14,7 @@
             "phone": "(479) 705-3488",
             "url": "https://www.24hourfamfit.com",
             "webPic": "images/directoryPhotos/24hrFit.png",
-            "memberLvl": "4"
+            "memberLvl": "Silver"
         },
         {
             "name": "Cleopatra's Salon",
@@ -22,7 +22,7 @@
             "phone": "(479) 705-1500",
             "url": "https://www.facebook.com/cleopatrassalon2002/?ref=page_internal",
             "webPic": "images/directoryPhotos/cleopatPic.png",
-            "memberLvl": "2"
+            "memberLvl": "Silver"
         },
         {
             "name": "Atwood's",
@@ -30,7 +30,7 @@
             "phone": "(479) 705-2880",
             "url": "https://www.atwoods.com",
             "webPic": "images/directoryPhotos/atwoodsPic.png",
-            "memberLvl": "3"
+            "memberLvl": "NP"
         },
         {
             "name": "Meadors Lumber Company",
@@ -38,7 +38,7 @@
             "phone": "(479) 705-0675",
             "url": "https://meadorslumber.com",
             "webPic": "images/directoryPhotos/6216bfef470ca_TV_Logo.png",
-            "memberLvl": "4"
+            "memberLvl": "Gold"
         },
         {
             "name": "King's Locksmith",
@@ -46,7 +46,7 @@
             "phone": "(479) 754-4096",
             "url": "https://www.kingslocks.com",
             "webPic": "images/directoryPhotos/kingsLockPic.png",
-            "memberLvl": "1"
+            "memberLvl": "NP"
         },
         {
             "name": "Blossomberry Nursery",
@@ -54,7 +54,7 @@
             "phone": "479-754-6489",
             "url": "https://www.facebook.com/blossomberrynursery",
             "webPic": "images/directoryPhotos/blossumPic.png",
-            "memberLvl": "1"
+            "memberLvl": "Gold"
         },
         {
             "name": "Peach Pickin' Paradise",
@@ -62,7 +62,7 @@
             "phone": "(479) 754-2006",
             "url": "https://www.facebook.com/peachpickinparadise/",
             "webPic": "images/directoryPhotos/peachPic.png",
-            "memberLvl": "3"
+            "memberLvl": "Bronze"
         },
         {
             "name": "Oark General Store & Cafe",
@@ -70,7 +70,7 @@
             "phone": "(479) 292-3351",
             "url": "http://www.oarkgeneralstore.com/",
             "webPic": "images/directoryPhotos/oarkPic.png",
-            "memberLvl": "3"
+            "memberLvl": "Gold"
         }
         
     ]

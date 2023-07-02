@@ -20,6 +20,7 @@ const getSpotlight = (businesses) => {
         let img = document.createElement("img");
         let h2 = document.createElement("h2");
         let url = document.createElement("a");
+        let level = document.createElement("h3");
         
         img.setAttribute("src", businesses[rand].webPic);
         img.setAttribute("alt", businesses[rand].name);
@@ -31,11 +32,14 @@ const getSpotlight = (businesses) => {
 
         h2.textContent = businesses[rand].name;
 
+        level.textContent = `Member Level: ${businesses[rand].memberLvl}`;
+
         url.innerText = `Go to Web`;
         url.setAttribute("href", businesses[rand].url);
 
         div.appendChild(h2);
         div.appendChild(img);
+        div.appendChild(level);
         div.appendChild(url);
 
         doc.append(div);
