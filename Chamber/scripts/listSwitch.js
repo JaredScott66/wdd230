@@ -1,13 +1,12 @@
-const button = document.querySelector("#listButton");
-const listSect = document.querySelector(".discPhotos");
-const listDiv = document.querySelector(".gridView");
+const button = document.getElementById("#listButton");
+const directory = document.querySelector(".cards");
 
 
 function toggleMenu() {
     console.log("Hmm, crunchy code");
-    document.getElementById("discover").classList.toggle("listView");
+    directory.classList.replace(".cards", "cardsList");
     document.getElementById("listButton").classList.toggle("open");
 }
 
-const x = document.getElementById("hambergerBtn");
-x.onclick = toggleMenu;
+
+button.addEventListener("click", toggleMenu())
