@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    <header id="headBanner">
+        
+        <a href="index.html">
+            <img class="logo" src="images/apple_logo_51x61.png" loading="lazy" alt="Bountiful Foods Logo">
+        </a>
+        <h1>Bountiful Foods</h1>
+        <div id="contactTop">   
+            <h3>Contact Info</h3>
+            <p>1+ (123) 456-7890<br>
+                WeHaveFruit@berry.com</p>       
+        </div>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="aboutUs.html">About Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Drink submission</h2>
+        <form method="get">
+            <fieldset id="contactForm">
+                <legend>Contact Information</legend>
+                <label> First Name* <br><input type="text" name="fname" required></label>
+                <label> Last Name* <br><input type="text" name="lname" required></label>
+                <label>Email* <br><input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" name="email" placeholder="exampel@gmail.com"></label>
+                <label>Cell Phone* <br><input type="tel" pattern="[9-0]" name="phone" placeholder="(xxx) xxx-xxxx" required></input></label>
+            </fieldset>
+            <fieldset id="drinkForm">
+                <legend>Fruit Selection</legend>
+                <label>&#x2022; <select name="fruits" class="fruitSelect" id="fruitSelect1"></select></label>
+                <label>&#x2022; <select name="fruits" class="fruitSelect" id="fruitSelect2"></select></label>
+                <label>&#x2022; <select name="fruits" class="fruitSelect" id="fruitSelect3"></select></label>
+                <legend>Extra Prep Instructions</legend>
+                <textarea id="fruitComment"></textarea>
+            </fieldset>
+            <input type="submit" value="submit">
+        </form>
+    </main>
+    <footer>
+        <section id="siteFooter">
+            <a id="footLogo" href="index.html">
+                <img class="logo" src="images/apple_logo_51x61.png" loading="lazy" alt="Bountiful Foods Logo">
+            </a>
+            <div id="footerContact">
+                <p>xxx Road xxxx<br>
+                    Carlsbad CA xxxxx<br><br>
+                    1+ (123) 456-7890
+                </p>
+            </div>
+            <div id="footerMedia">
+                <a href="https://www.facebook.com/" class="media">
+                    <img src="images\facebook-logo_30x30.png" alt="facebook icon">
+                </a>
+                <a href="https://www.instagram.com" class="media">
+                    <img src="images/Instagram-Icon_30x30.png" alt="???">
+                </a>
+                <a href="https://twitter.com" class="media">
+                    <img src="images/twitter_logo_30x30.png" alt="???">
+                </a>
+            </div> 
+            <a href="credits.html" id="credits">Credits</a>
+        </section>
+        <div id="devCredit">
+            <h3> &copy; 2023 | Jared Steven. T, Scott. | Arkansas </h3>
+            <h4>Last updated: <p id="sudo"></p></h2>
+        </div>
+    </footer>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/getFruitData.js"></script>
+</body>
+</html>
