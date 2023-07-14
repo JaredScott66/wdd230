@@ -36,7 +36,7 @@
                 <label> First Name* <br><input type="text" name="fname" required></label>
                 <label> Last Name* <br><input type="text" name="lname" required></label>
                 <label>Email* <br><input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" name="email" placeholder="exampel@gmail.com"></label>
-                <label>Cell Phone* <br><input type="tel" pattern="[9-0]" name="phone" placeholder="(xxx) xxx-xxxx" required></input></label>
+                <label>Cell Phone* <br><input type="tel" pattern="[9-0]{3}+-+[9-0]{3}+-+[9-0]{4}" name="phone" placeholder="(xxx) xxx-xxxx" required></input></label>
             </fieldset>
             <fieldset id="drinkForm">
                 <legend>Fruit Selection</legend>
@@ -46,7 +46,7 @@
                 <legend>Extra Prep Instructions</legend>
                 <textarea id="fruitComment"></textarea>
             </fieldset>
-            <input type="submit" value="submit">
+            <input type="submit" value="Submit" name="fruitSubmit">
         </form>
     </main>
     <footer>
