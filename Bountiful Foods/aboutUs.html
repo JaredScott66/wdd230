@@ -28,28 +28,39 @@
             <a href="aboutUs.html">About Us</a>
         </nav>
     </header>
-    <main id="freshPage">
-        <h2>Drink submission</h2>
-        <form method="get" id="freshForm">
-            <fieldset id="contactForm">
-                <legend>Contact Information</legend>
-                <label> First Name* <br><input type="text" name="fname" id="nameF"  required></label>
-                <label>Email* <br><input name="email" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" name="email" placeholder="exampel@gmail.com"></label>
-                <label>Cell Phone* <br><input name="phone" type="tel" name="phone" id="phone" placeholder="(xxx) xxx-xxxx" required></input></label>
-            </fieldset>
-            <fieldset id="drinkForm">
-                <legend>Fruit Selection</legend>
-                <label>&#x2022; <select name="fruits1" class="fruitSelect" id="fruitSelect1"></select></label>
-                <label>&#x2022; <select name="fruits2" class="fruitSelect" id="fruitSelect2"></select></label>
-                <label>&#x2022; <select name="fruits3" class="fruitSelect" id="fruitSelect3"></select></label>
-                <legend>Extra Prep Instructions</legend>
-                <textarea name="fruitComment" id="fruitComment" placeholder="Write here what extra steps you want"></textarea>
-            </fieldset>
-            <input type="submit" value="Submit" name="fruitSubmit" id="fruitData">
-        </form>
-        <section id="submitInfo">
-            <h2>Drink Summary</h2>
-        </section>
+    <main id="aboutUs">
+        <div class="aboutInfo" id="about1">
+            <h2>We are Bountiful Foods</h2>
+            <img src="images/ar-farmers-market-1_604x400.png" alt="Baskets of apples" loading="lazy" class="aboutUs1">
+            <p>
+                We are a small business, who's goal is to 
+                bring fresh and organic produce all along the coast!
+                From fresh produce, to delicious smoothies that you can enjoy 
+                as you stroll along california's beautiful beaches. <br><br>You can count on us! 
+            </p>
+        </div>
+        <div class="aboutInfo" id="about2">
+            <h2>We are local!</h2>
+            <img src="images/Farmers_Market_604x403.png" alt="Farmers market" loading="lazy" class="aboutUs2">
+            <p>
+                Based out Carlsbad, we have spread across
+                the coast from San-Diego to Los Angeles. Bringing
+                fresh fruits and produce directly from the 
+                farmers to you! You can find the owner-operated stores that
+                cater to walk in traffic at their storefronts in Carlsbad and, 
+                of course, their food trucks.
+            </p>
+        </div>
+        <div class="aboutInfo" id="about3">
+            <h2>Our Wish</h2>
+                <img src="images/portrait-600x400.png" alt="A smiling farmer holding a basket" loading="lazy" class="aboutUs3">
+            <p>
+                Our mission is to promote healthy eating and
+                provide conveinent, made to order fruit bags and drinks to the local
+                population and those who visit the coast from 
+                wherever they come!
+            </p>
+        </div>
     </main>
     <footer>
         <section id="siteFooter">
@@ -81,7 +92,6 @@
         </div>
     </footer>
     <script src="scripts/lastModified.js"></script>
-    <script src="scripts/getFruitData.js"></script>
-    <script src="scripts/formHandler.js"></script>
+
 </body>
 </html>

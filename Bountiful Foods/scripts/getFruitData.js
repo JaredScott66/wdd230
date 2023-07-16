@@ -26,16 +26,6 @@ const displayFruitSelection = (fruits) => {
     });
 }
 
-const getNutrition = (fruits) => {
-    const btn = document.getElementsByName(fruitSubmit);
-    const fruit1 = document.getElementById("fruitSelect1");
-    const fruit2 = document.getElementById("fruitSelect2");
-    const fruit3 = document.getElementById("fruitSelect3");
-
-    let div = document.createElement("div");
-    let 
-
-}
-
+const btn = document.getElementById("fruitdata");
 getData();
 
