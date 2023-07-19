@@ -288,7 +288,7 @@ main {
     background-color: rgba(141, 141, 141, 0.26);
 }
 
-/*Fresh Page*/
+Fresh Page
 
 #freshPage {
     display: grid;
@@ -313,6 +313,37 @@ main {
     grid-row: 1/2;
     grid-column: 1/2;
     text-align: center;
+}
+
+#submitInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(28, 230, 78);
+    margin-bottom: 10px;
+}
+
+#submitInfoHeader {
+    background-color: rgb(10, 180, 52);
+    padding: 20px;
+    margin-bottom: 0;
+    color: black;
+}
+
+#userInfo {
+    grid-row: 1/2;
+    /* text-align: center; */
+}
+
+#nutritionInfo {
+
+    grid-row: 2/3;
+    text-align: center;
+}
+
+#nutIdP {
+    text-align: center;
+    font-weight: bolder;
 }
 
 /*About Us Page*/

@@ -1,38 +1,8 @@
 const fruitJson = "https:brotherblazzard.github.io/canvas-content/fruit.json";
 
-async function getData () {
-    const response = await fetch(fruitJson);
-    const data = await response.json();
-    console.log(data);
-    return data;
-    
-}
+const drinkSub = document.getElementById("drinksSubmitted");
 
-const getNutritionData = (json, choices) => {
-    const fruitInfo = document.getElementById("#nutritionInfo");
-
-    choices.forEach(choice => {
-        console.log("choice loop");
-        
-        json.forEach(item => {
-            let carbs = document.createElement("p");
-            let protein = document.createElement("p");
-            let sugar = document.createElement("p");
-            let calories = document.createElement("p");
-
-            let carbData = null;
-            let proData = null;
-            let sugarData = null;
-            let calData = null;
-
-            console.log("json loop");
-            if (item.name == choice){
-                carbData = item.carbohydrates;
-                console.log("carb work");
-            }    
-        });
-    });
-};   
+ 
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -41,12 +11,18 @@ function handleSubmit(event) {
     const fruitFormData = Object.fromEntries(data.entries());
     const choices = [fruitFormData.fruits1, fruitFormData.fruits2, fruitFormData.fruits3];
     console.log({choices});
-    fruitData = getData();
+    // fruitData = getData();
     console.log({fruitFormData});
 
     buildSummery(fruitFormData);
     getNutritionData(fruitData, choices)
-  }
+    let userSub = Number(window.localStorage.getItem("DrinkSub"));
+
+    drinkSub.textContent = `Drinks Submitted by User: ${userSub}`;
+    userSub ++;
+    localStorage.setItem("DrinkSub", userSub);
+    
+  };
   
   
   
@@ -54,7 +30,13 @@ function handleSubmit(event) {
       const pageSect = document.getElementById("userInfo");
       
       let ul = document.createElement("ul");
-      let li = document.createElement("li");
+      let li1 = document.createElement("li");
+      let li2 = document.createElement("li");
+      let li3 = document.createElement("li");
+      let li4 = document.createElement("li");
+      let li5 = document.createElement("li");
+      let li6 = document.createElement("li");
+      let li7 = document.createElement("li");
       let div = document.createElement("div");
       
       let firstName = document.createElement("h2")
@@ -65,26 +47,89 @@ function handleSubmit(event) {
       let fruit3 = document.createElement("h3");
       let comment = document.createElement("h3");
       
-      firstName.innerText = `-${formStuff.fname}`;
+      firstName.innerHTML = `<strong>${formStuff.fname}</strong>`;
       
-      comment.innerText = `- ${formStuff.fruitComment}`;
-      email.innerText = `- ${formStuff.email}`;
-      phone.innerText = `- ${formStuff.phone}`;
-      fruit1.innerText = `- ${formStuff.fruits1}`;
-      fruit2.innerText = `- ${formStuff.fruits2}`;
-      fruit3.innerText = `- ${formStuff.fruits3}`;
+      comment.innerText = `Instructions ${formStuff.fruitComment}`;
+      email.innerText = `Email: ${formStuff.email}`;
+      phone.innerText = `Phone ${formStuff.phone}`;
+      fruit1.innerText = `Fruit Choices: ${formStuff.fruits1}, ${formStuff.fruits2}, ${formStuff.fruits3}`;
+    //   fruit2.innerText = `- ${formStuff.fruits2}`;
+    //   fruit3.innerText = `- ${formStuff.fruits3}`;
       
-      li.appendChild(firstName);
-      li.appendChild(phone);
-      li.appendChild(email)
-      li.appendChild(fruit1);
-      li.appendChild(fruit2);
-      li.appendChild(fruit3);
-      li.appendChild(comment);
-      ul.append(li);
+      li2.appendChild(phone);
+      li3.appendChild(email)
+      li4.appendChild(fruit1);
+    //   li5.appendChild(fruit2);
+    //   li6.appendChild(fruit3);
+      li7.appendChild(comment);
+      ul.append(li2);
+      ul.append(li3);
+      ul.append(li3);
+      ul.append(li4);
+    //   ul.append(li5);
+    //   ul.append(li6);
+      ul.append(li7);
       
+      pageSect.append(firstName);
       pageSect.append(ul);
     };
     
     const form = document.getElementById("freshForm");
     form.addEventListener('submit', handleSubmit);
+
+
+const fruitElement = document.getElementById("nutritionInfo");
+
+var fruitData = null;
+
+async function getData () {
+    const response = await fetch(fruitJson);
+    const data = await response.json();
+    console.log(data);
+    fruitData = data;
+    
+}
+
+const getNutritionData = (json, choices) => {
+    let carbs = document.createElement("h3");
+    let protein = document.createElement("h3");
+    let sugar = document.createElement("h3");
+    let calories = document.createElement("h3");
+
+    let carbData = null;
+    let proData = null;
+    let sugarData = null;
+    let calData = null;
+
+
+    choices.forEach(choice => {
+        json.forEach(item => {
+
+            if (item.name == choice){
+                carbData += item.nutritions.carbohydrates;
+                // console.log(carbData);
+                proData += item.nutritions.protein;
+                // console.log(proData);
+                sugarData += item.nutritions.sugar;
+                // console.log(sugarData);
+                calData += item.nutritions.calories;
+                // console.log(calData);
+            }    
+        });
+    });
+
+    carbs.innerHTML = `Carbohydrates: ${carbData.toFixed(1)}`;
+    protein.innerHTML = `Proteins: ${proData.toFixed(1)}`;
+    sugar.innerHTML = `Sugars: ${sugarData.toFixed(1)}`;
+    calories.innerHTML = `Calories: ${calData.toFixed(1)}`;
+
+
+    fruitElement.append(carbs);
+    fruitElement.append(protein);
+    fruitElement.append(sugar);
+    fruitElement.append(calories);
+
+};   
+
+
+getData();
