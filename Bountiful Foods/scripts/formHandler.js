@@ -142,23 +142,23 @@ async function getData () {
     fruitData = data;
 }
 
-const displayFruitSelection = (fruits) => {
-    const idList = ["fruitSelect1", "fruitSelect2", "fruitSelect3"]
+// const displayFruitSelection = (fruits) => {
+//     const idList = ["fruitSelect1", "fruitSelect2", "fruitSelect3"]
 
-    idList.forEach((element) => {
-        const fruitList = document.getElementById(element);
+//     idList.forEach((element) => {
+//         const fruitList = document.getElementById(element);
         
-        fruits.forEach((fruit) => {
-            let item = document.createElement("option");
+//         fruits.forEach((fruit) => {
+//             let item = document.createElement("option");
 
-            item.setAttribute("value", fruit.name);
-            item.innerText = `${fruit.name}`;
+//             item.setAttribute("value", fruit.name);
+//             item.innerText = `${fruit.name}`;
 
-            fruitList.append(item);
-        });
+//             fruitList.append(item);
+//         });
 
-    });
-}
+//     });
+// }
 
 const btn = document.getElementById("fruitdata");
 
