@@ -5,7 +5,12 @@ const drinkSub = document.getElementById("drinksSubmitted");
 var fruitData = null;
 
 async function getData () {
+  try {
     const response = await fetch(fruitJson);
+  } catch (error) {
+    // TypeError: Failed to fetch
+    console.log('There was an error', error);
+  }
     const data = await response.json();
     console.log(data);
     fruitData = data;
