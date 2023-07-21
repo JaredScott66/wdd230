@@ -74,8 +74,6 @@ function handleSubmit(event) {
       pageSect.append(ul);
     };
     
-    const form = document.getElementById("freshForm");
-    form.addEventListener('submit', handleSubmit);
 
 
 const fruitElement = document.getElementById("nutritionInfo");
@@ -88,6 +86,9 @@ async function getData () {
     console.log(data);
     fruitData = data;
     
+    const form = document.getElementById("freshForm");
+    form.addEventListener('submit', handleSubmit);
+
 }
 
 const getNutritionData = (json, choices) => {
