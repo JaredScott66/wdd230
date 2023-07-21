@@ -83,8 +83,8 @@ function handleSubmit(event) {
       pageSect.append(ul);
     };
     
-    const form = document.getElementById("freshForm");
-    form.addEventListener('submit', handleSubmit);
+const form = document.getElementById("freshForm");
+form.addEventListener('submit', handleSubmit);
 
 
 const fruitElement = document.getElementById("nutritionInfo");
