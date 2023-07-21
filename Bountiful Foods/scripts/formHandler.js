@@ -4,13 +4,13 @@ const drinkSub = document.getElementById("drinksSubmitted");
 
  var fruitData = null;
 
-async function getData () {
-    const response = await fetch(fruitJson);
-    const data = await response.json();
-    console.log(data);
-    fruitData = data;
+// async function getData () {
+//     const response = await fetch(fruitJson);
+//     const data = await response.json();
+//     console.log(data);
+//     fruitData = data;
     
-}
+// }
 
 
 function handleSubmit(event) {
@@ -130,6 +130,39 @@ const getNutritionData = (json, choices) => {
     fruitElement.append(calories);
 
 };   
+
+// const url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+
+async function getData () {
+    const response = await fetch(fruitJson);
+    const data = await response.json();
+    console.log(data);
+
+    displayFruitSelection(data);
+    fruitData = data;
+}
+
+const displayFruitSelection = (fruits) => {
+    const idList = ["fruitSelect1", "fruitSelect2", "fruitSelect3"]
+
+    idList.forEach((element) => {
+        const fruitList = document.getElementById(element);
+        
+        fruits.forEach((fruit) => {
+            let item = document.createElement("option");
+
+            item.setAttribute("value", fruit.name);
+            item.innerText = `${fruit.name}`;
+
+            fruitList.append(item);
+        });
+
+    });
+}
+
+const btn = document.getElementById("fruitdata");
+
+
 
 
 getData();
