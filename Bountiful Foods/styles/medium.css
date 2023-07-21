@@ -24,6 +24,7 @@
         position: relative;
     }
 
+
     #contentSection {
         grid-row: 2/6;
         grid-column: 1/2;

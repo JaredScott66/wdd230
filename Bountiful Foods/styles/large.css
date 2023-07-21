@@ -370,7 +370,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         margin-bottom: 15px;
-        width: 70dvw;
+        width: 50dvw;
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -382,7 +382,7 @@
 
     .aboutInfo {
         background-color: rgb(76, 192, 47);
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px 1fr;
         border: solid 3px rgb(57, 141, 36);
