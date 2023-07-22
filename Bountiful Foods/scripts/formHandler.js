@@ -2,7 +2,16 @@ const fruitJson = "https:brotherblazzard.github.io/canvas-content/fruit.json";
 
 const drinkSub = document.getElementById("drinksSubmitted");
 
- 
+var fruitData = null;
+
+async function getData () {
+    const response = await fetch(fruitJson);
+    const data = await response.json();
+    console.log(data);
+    fruitData = data;
+    
+}
+
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -74,22 +83,12 @@ function handleSubmit(event) {
       pageSect.append(ul);
     };
     
+    const form = document.getElementById("freshForm");
+    form.addEventListener('submit', handleSubmit);
 
 
 const fruitElement = document.getElementById("nutritionInfo");
 
-var fruitData = null;
-
-async function getData () {
-    const response = await fetch(fruitJson);
-    const data = await response.json();
-    console.log(data);
-    fruitData = data;
-    
-    const form = document.getElementById("freshForm");
-    form.addEventListener('submit', handleSubmit);
-
-}
 
 const getNutritionData = (json, choices) => {
     let carbs = document.createElement("h3");
